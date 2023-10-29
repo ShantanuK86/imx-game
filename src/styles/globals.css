@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: blueviolet;  /* fallback for old browsers */
+}
+
+.pod {
+  cursor: pointer !important;
+  background-color: blueviolet;
+  /* box-shadow: inset 0px 7px 0px 0px rgba(0, 0, 2, 1); */
+}
+
+.grid-box{
+  background-color: #E0EAFC;
+}
+
+.playerTwoTile {
+  cursor: pointer;
+  /* box-shadow: inset 7px -11px 8px 15px rgb(245, 124, 3); */
+  /* background: radial-gradient(circle at 20px 20px, #60a7f3, rgb(1, 33, 91)); */
+  background-color: rgb(249, 124, 0) !important;
+}
+
+.playerOneTile {
+  cursor: pointer;
+  /* box-shadow: inset 7px -11px 8px 15px rgb(1, 74, 212); */
+  /* background: radial-gradient(circle at 20px 20px, #60a7f3, rgb(1, 33, 91)); */
+  background-color: rgb(0, 88, 251) !important;
+}
+
+.tile {
+  background: #fff;
+  box-shadow:0px 11px 0px 0px rgba(0, 0, 2, 1);
+}
+
+.mask{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.mask-active{
+  background-color: rgba(0, 0, 0, 0.331);
+  visibility: 1;
+  z-index: 100;
+}
+
+.mask-disabled{
+  visibility: 0;
+  z-index: -100;
+}
+
+.grid-tile{
+  border-radius: 60px;
+}
+
+
+.modal{
+  border-radius: 30px !important;
+}
