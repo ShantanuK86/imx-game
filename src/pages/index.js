@@ -1,7 +1,9 @@
 import Image from "next/image";
+import '@imtbl/sdk';
 import { Inter } from "next/font/google";
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import './passport';
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
